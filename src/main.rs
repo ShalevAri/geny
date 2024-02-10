@@ -3,7 +3,7 @@ use std::fs::{self, File};
 use std::io::{self, prelude::*};
 
 fn main() {
-    let licenses = ["MIT", "Apache-2.0", "GPL-3.0"];
+    let licenses = ["MIT", "Apache-2.0", "GPL-3.0", "Unlicense"];
 
     let selection = Select::with_theme(&ColorfulTheme::default())
         .with_prompt("Choose a license:")
@@ -18,6 +18,7 @@ fn main() {
         "MIT" => include_str!("mit_license.txt"),
         "Apache-2.0" => include_str!("apache_license.txt"),
         "GPL-3.0" => include_str!("gpl_license.txt"),
+        "Unlicense" => include_str!("unlicense.txt"),
         _ => panic!("Invalid license selected."),
     };
 
