@@ -4,6 +4,7 @@ authors = ["Shalev Ari"]
 version = "0.1.0"
 edition = "2021"
 description = "Blazingly fast license generation!"
+repository = "https://github.com/ShalevAri/geny"
 license = "MIT"
 
 
