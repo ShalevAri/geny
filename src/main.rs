@@ -39,7 +39,7 @@ fn main() {
     match File::create(license_file_path).and_then(|mut file| file.write_all(license_text.as_bytes())) {
         Ok(_) => {
             println!(
-                "A LICENSE file for the {} license was successfully created!",
+                "A LICENSE file for the {} license was successfully created!\nMake sure you replace unique values (your name for example)",
                 selected_license
             );
         }
